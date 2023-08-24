@@ -1,0 +1,12 @@
+¿Por qué un lenguaje de programación sólo puede utilizarse en algunos sistemas operativos y en otros no?. ¿Qué tipo de máquina virtual soporta virtualBox?. ¿Qué función cumple el hypervisor en la virtualización?Si tengo más de una máquina virtual instalada, y una se rompe, ¿esto afecta a las demás? ¿por qué?
+Compatibilidad de Sistemas Operativos: Un lenguaje de programación puede ser específico de ciertos sistemas operativos debido a diferencias en las bibliotecas, API y arquitecturas subyacentes. Los lenguajes de programación a menudo se diseñan para trabajar en sistemas operativos particulares, y si no se adaptan a otros sistemas, pueden no funcionar correctamente o no ser eficientes.
+
+VirtualBox: VirtualBox es una plataforma de virtualización que admite varias máquinas virtuales, incluyendo sistemas operativos Windows, Linux, macOS y otros. Es una máquina virtual de hipervisor de tipo 2 que se ejecuta en un sistema operativo principal (anfitrión) y permite la ejecución de sistemas operativos invitados. Puede alojar una variedad de sistemas operativos invitados, como Windows, Linux, macOS, etc.
+
+Función del Hypervisor: Un hypervisor es el componente fundamental en la virtualización. Su función principal es administrar y coordinar varias máquinas virtuales en un servidor físico. Actúa como una capa de abstracción que asigna recursos físicos (CPU, memoria, almacenamiento) a las máquinas virtuales y garantiza su aislamiento y rendimiento.
+
+Afectación de otras máquinas virtuales si una se rompe: La afectación de otras máquinas virtuales cuando una se rompe depende del tipo de virtualización y del hypervisor utilizado. En la virtualización por hipervisor de tipo 1, donde el hypervisor se ejecuta directamente en el hardware, la falla de una máquina virtual generalmente no afectará a las demás, ya que están aisladas. En la virtualización de hipervisor de tipo 2, donde el hypervisor se ejecuta sobre un sistema operativo anfitrión, una falla en una máquina virtual podría afectar a otras en el mismo sistema operativo anfitrión si el sistema operativo anfitrión se ve comprometido. Sin embargo, la mayoría de los hypervisors están diseñados para minimizar este tipo de impacto y brindar aislamiento entre máquinas virtuales tanto como sea posible.
+
+
+
+
